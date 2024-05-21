@@ -1,8 +1,6 @@
-O: Open/Closed Principle (OCP)
-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+D: Dependency Inversion Principle (DIP)
+High-level modules should not depend on low-level modules; both should depend on abstractions.
 
-This means the design of a software entity should be such that you can introduce new functionality or behavior without modifying the existing code since changing the existing code might introduce bugs.
+This means that a particular class should not depend directly on another class, but on an abstraction (interface) of this class.
 
-By introducing an abstraction (Shape class) and separating the concrete implementations (Rectangle and Circle classes), we can add new shapes without modifying the existing code.
-
-The ShapeCalculator class can now work with any shape that implements the Shape interface, allowing for easy extensibility.
+Applying this principle reduces dependency on specific implementations and makes our code more reusable.
