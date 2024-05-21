@@ -1,8 +1,6 @@
-O: Open/Closed Principle (OCP)
-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+I: Interface Segregation Principle (ISP)
+No client should be forced to depend on interfaces they don't use.
 
-This means the design of a software entity should be such that you can introduce new functionality or behavior without modifying the existing code since changing the existing code might introduce bugs.
+The main idea behind ISP is to prevent the creation of "fat" or "bloated" interfaces that include methods that are not required by all clients.
 
-By introducing an abstraction (Shape class) and separating the concrete implementations (Rectangle and Circle classes), we can add new shapes without modifying the existing code.
-
-The ShapeCalculator class can now work with any shape that implements the Shape interface, allowing for easy extensibility.
+By segregating interfaces into smaller, more specific ones, clients only depend on the methods they actually need, promoting loose coupling and better code organization.
