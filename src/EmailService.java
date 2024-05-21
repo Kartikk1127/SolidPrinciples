@@ -1,12 +1,8 @@
-//In this example, the EmailService class directly depends on the GmailClient class, a low-level module that implements the details of sending emails using the Gmail API.
-//
-//This violates the DIP because the high-level EmailService module is tightly coupled to the low-level GmailClient module.
-
+//Now, the EmailService class depends on the EmailClient abstraction, and the low-level email client implementations (GmailClient and OutlookClient) depend on the abstraction.
+//This follows the DIP, resulting in a more flexible and extensible design.
 public class EmailService {
 
-    GmailService gmailService = new GmailService();
-
-    public void sendEmail(){
-        gmailService.sendGmail();
+    public void sendEmail(EmailClient mailClient){
+        mailClient.sendMail();
     }
 }
