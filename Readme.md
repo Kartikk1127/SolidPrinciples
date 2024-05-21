@@ -1,8 +1,5 @@
-O: Open/Closed Principle (OCP)
-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+L: Liskov Substitution Principle (LSP)
+Objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program.
 
-This means the design of a software entity should be such that you can introduce new functionality or behavior without modifying the existing code since changing the existing code might introduce bugs.
+This means if you have a base class and a derived class, you should be able to use instances of the derived class wherever instances of the base class are expected, without breaking the application.
 
-By introducing an abstraction (Shape class) and separating the concrete implementations (Rectangle and Circle classes), we can add new shapes without modifying the existing code.
-
-The ShapeCalculator class can now work with any shape that implements the Shape interface, allowing for easy extensibility.
