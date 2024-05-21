@@ -1,6 +1,6 @@
 public class Vehicle {
 
-    public void startEngine(){
+    public void start(){
         //todo: logic
     }
 }
