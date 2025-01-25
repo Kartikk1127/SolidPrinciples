@@ -15,6 +15,9 @@ import org.example.srp.BankService;
 //to use the methods that they do not want to use.
 //It's goal is similar to the Single Responsibility Principle
 
+//Dependency Inversion Principle states that we must use abstraction(abstract classes and interfaces) instead of concrete implementations. High level modules
+//should not depend on the low-level module but both should depend on the abstraction
+
 public class Main {
     public static void main(String[] args) {
         //if you want to deposit money
