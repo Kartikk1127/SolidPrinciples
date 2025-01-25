@@ -7,8 +7,13 @@ import org.example.srp.BankService;
 //the open closed principle states that according to the new requirements the module should be open for extension but closed for
 //modifications
 
-//It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words,
+//Liskov Substitution Principle applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words,
 // if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behaviour of the program
+
+//Interface Segregation Principle states that the larger interfaces split into smaller ones. Because,
+//the implementation classes use only the methods that are required. We should not force the client
+//to use the methods that they do not want to use.
+//It's goal is similar to the Single Responsibility Principle
 
 public class Main {
     public static void main(String[] args) {
