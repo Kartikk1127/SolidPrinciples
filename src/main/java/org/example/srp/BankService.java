@@ -1,8 +1,5 @@
 package org.example.srp;
 
-//Single Responsibility Principle: Every java class must perform a single functionality.
-//Implementation of multiple functionalities in a single class mess the code up
-
 public class BankService {
 
     long amount;
