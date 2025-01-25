@@ -7,6 +7,9 @@ import org.example.srp.BankService;
 //the open closed principle states that according to the new requirements the module should be open for extension but closed for
 //modifications
 
+//It applies to inheritance in such a way that the derived classes must be completely substitutable for their base classes. In other words,
+// if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behaviour of the program
+
 public class Main {
     public static void main(String[] args) {
         //if you want to deposit money
