@@ -1,6 +1,11 @@
 package org.example;
 
 import org.example.srp.BankService;
+//Single Responsibility Principle: Every java class must perform a single functionality.
+//Implementation of multiple functionalities in a single class mess the code up
+
+//the open closed principle states that according to the new requirements the module should be open for extension but closed for
+//modifications
 
 public class Main {
     public static void main(String[] args) {
